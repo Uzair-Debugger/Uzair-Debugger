@@ -39,7 +39,7 @@ I’m a **results-driven Full-Stack Developer** focused on building **scalable, 
 
 ### Backend & Databases
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,nextjs,nodejs,flask,fastapi,mysql,mongodb,postgres)](https://skillicons.dev" />
+  <img src="https://skillicons.dev/icons?i=nodejs,flask,fastapi,postgres,mysql,mongodb,postgres)](https://skillicons.dev" />
 </p>
 
 ### For AI-Powered Web-Applications
