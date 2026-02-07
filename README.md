@@ -8,7 +8,7 @@
 
 <p align="center">
   <img 
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=005fcbff&center=true&vCenter=true&width=760&lines=Full-Stack+Developer;MERN+%7C+Next.js+%7C+FastAPI+Engineer;Full-Stack AI Developer;Production ready Web Applications And API development" 
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=005fcbff&center=true&vCenter=true&width=760&lines=Full-Stack+Developer;MERN+%7C+Next.js+%7C+FastAPI+Engineer;Full-Stack+AI+Developer;Production+ready+Web+Applications+And+API+development"
     alt="Typing SVG"
   />
 </p>
@@ -69,7 +69,7 @@ I’m a **results-driven Full-Stack Developer** focused on building **scalable, 
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Uzair-Debugger&theme=dark" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Uzair-Debugger&theme=dark"/>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Uzair-Debugger&theme=tokyonight" width="45%" />
