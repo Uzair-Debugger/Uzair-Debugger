@@ -1,5 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Setup
+`npx create-next-app@latest./`
 
+`npm i lucide-react clsx tailwind-merge`
+`npm i class-variance-authority`
 ## Getting Started
 
 First, run the development server:
