@@ -6,7 +6,7 @@ const Container = React.forwardRef<HTMLElement, ContainerProps>(
     ({className, children, ...props}: ContainerProps, refs)=>{
         return(
             <section 
-                className={mergeClasses('w-full bg-gray-500 ', className)}
+                className={mergeClasses('w-full dark:bg-[rgb(var(--app-gray-50))] ', className)}
                 ref={refs}
                 {...props}
             >

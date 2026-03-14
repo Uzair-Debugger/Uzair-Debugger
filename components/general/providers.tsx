@@ -1,0 +1,12 @@
+// theme provider component to wrap the entire app, allowing us to use the theme context in any component
+'use client';
+
+import { ThemeProvider } from 'next-themes';
+
+export default function Providers({ children }: { children: React.ReactNode }) {
+    return (
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            {children}
+        </ThemeProvider>
+    );
+}

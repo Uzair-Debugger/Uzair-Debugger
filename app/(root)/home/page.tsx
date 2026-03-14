@@ -16,8 +16,9 @@ export default function App() {
       </CustomButton>
 
       {/* With custom className */}
-      <CustomButton 
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      <CustomButton
+        btnType="link"
+        className="bg-red-500 hover:bg-red-600 text-white dark:bg-[var(--app-gray-500)]"
         onClick={handleClick}
       >
         Styled Button

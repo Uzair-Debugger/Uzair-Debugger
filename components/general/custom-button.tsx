@@ -24,9 +24,9 @@ export default function CustomButton({
     return(
         <button 
             className={mergeClasses(
-                'text-gray-600 w-50 p-3 rounded-sm hover:bg-amber-400 cursor-pointer',
+                'w-50 p-3 rounded-sm cursor-pointer',
                 btnTypeClasses[btnType],
-                className
+                className,
             )} 
             {...props}
         >

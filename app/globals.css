@@ -1,1 +1,36 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+
+:root {
+  /* convert into rgb */
+  --app-gray-default: rgb(255, 255, 255);
+  --app-gray-50: rgb(249, 250, 251);
+  --app-gray-100: rgb(243, 244, 246);
+  --app-gray-200: rgb(229, 233, 235);
+  --app-gray-300: rgb(209, 213, 219);
+  --app-gray-400: rgb(156, 163, 175);
+  --app-gray-500: rgb(107, 114, 128);
+  --app-gray-600: rgb(75, 85, 99);
+  --app-gray-700: rgb(55, 65, 73);
+  --app-gray-800: rgb(31, 41, 55);
+  --app-gray-900: rgb(17, 24, 39);
+  --app-gray-950: rgb(3, 7, 18);
+}
+
+.dark {
+    --app-gray-default: rgb(3, 7, 18);
+    --app-gray-50: rgb(17, 24, 39);
+    --app-gray-100: rgb(55, 65, 73);
+    --app-gray-200: rgb(75, 85, 99);
+    --app-gray-300: rgb(107, 114, 128);
+    --app-gray-400: rgb(156, 163, 175);
+    --app-gray-500: rgb(209, 213, 219);
+    --app-gray-600: rgb(229, 233, 235);
+    --app-gray-700: rgb(249, 250, 251);
+    --app-gray-800: rgb(255, 255, 255);
+    --app-gray-900: rgb(3, 7, 18);
+    --app-gray-950: rgb(3, 7, 18);
+}
