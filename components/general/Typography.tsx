@@ -1,70 +1,60 @@
-import React from 'react';
-import { cva, type VariantProps } from 'class-variance-authority';
+import React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
+import { mergeClasses } from "../lib/utils";
 
-import { mergeClasses } from '../lib/utils';
-
-const typographyVariants = cva('text-gray-600 text-normal', {
+const typographyVariants = cva("", {
   variants: {
     variant: {
-      h1: 'text-4xl font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl lg:leading-[72px] text-gray-900',
-      h2: 'text-lg md:text-4xl font-semibold tracking-[-0.02em] text-gray-900',
-      h3: 'text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-gray-900',
-      subtitle: 'text-lg md:text-xl',
-      body1: 'text-base md:text-lg',
-      body2: 'text-base',
-      body3: 'text-sm',
+      h1: "text-4xl font-bold md:text-5xl lg:text-6xl dark:text-white",
+      h2: "text-3xl font-semibold md:text-4xl dark:text-white",
+      h3: "text-2xl font-semibold dark:text-white",
+      subtitle: "text-lg md:text-xl text-[var(--app-gray-300)]",
+      body1: "text-base md:text-lg text-[var(--app-gray-400)]",
+      body2: "text-base text-[var(--app-gray-400)]",
+      body3: "text-sm text-[var(--app-gray-500)]",
     },
   },
   defaultVariants: {
-    variant: 'body2',
+    variant: "body2",
   },
 });
 
 interface TypographyProps
-  extends React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLHeadingElement>,
-      HTMLHeadingElement
-    >,
+  extends React.HTMLAttributes<HTMLElement>,
     VariantProps<typeof typographyVariants> {
   component?: React.ElementType;
 }
 
-let elementMapping = {
-  h1: 'h1',
-  h2: 'h2',
-  h3: 'h3',
-  subtitle: 'p',
-  body1: 'p',
-  body2: 'p',
-  body3: 'p',
+const elementMapping = {
+  h1: "h1",
+  h2: "h2",
+  h3: "h3",
+  subtitle: "p",
+  body1: "p",
+  body2: "p",
+  body3: "p",
 };
 
-type ComponentElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
-
-const Typography = React.forwardRef<
-  HTMLHeadingElement | HTMLParagraphElement,
-  TypographyProps
->(
-  (
-    { component, className = '', variant, children, ...props }: TypographyProps,
-    ref
-  ) => {
-    const Comp = (
-      component ? component : variant ? elementMapping[variant] : 'p'
-    ) as ComponentElement;
+const Typography = React.forwardRef<HTMLElement, TypographyProps>(
+  ({ component, className, variant, children, ...props }, ref) => {
+    const Component = component
+      ? component
+      : variant
+      ? elementMapping[variant]
+      : "p";
 
     return (
-      <Comp
-        className={mergeClasses(typographyVariants({ variant }), className)}
+      <Component
         ref={ref}
+        className={mergeClasses(typographyVariants({ variant }), className)}
         {...props}
       >
         {children}
-      </Comp>
+      </Component>
     );
   }
 );
 
-Typography.displayName = 'Typography';
+Typography.displayName = "Typography";
 
 export default Typography;

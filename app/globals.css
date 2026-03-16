@@ -3,6 +3,13 @@
 
 
 
+body {
+  color: black;
+}
+
+.dark body {
+  color: var(--app-gray-400);
+}
 
 :root {
   /* convert into rgb */

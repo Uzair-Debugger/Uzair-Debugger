@@ -7,7 +7,7 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement>{}
 
 export default function Card({...props}:CardProps) {
   return (
-    <Container className='w-80 h-80 bg-white rounded-lg shadow-md flex flex-col items-center justify-center'
+    <Container className='w-80 h-80 dark:bg-[var(--app-gray-100)] rounded-lg shadow-md flex flex-col items-center justify-center'
         {...props}>
         <Typography variant='h2' className='text-olive-600'>Card Title</Typography>
         {/* <img src="" alt="" /> */}
