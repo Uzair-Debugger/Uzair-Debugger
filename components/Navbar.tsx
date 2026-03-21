@@ -9,6 +9,10 @@ export default function Navbar() {
     const { theme, setTheme } = useTheme();
     const [open, setOpen] = useState(false);
 
+    const handleDownloadCV = () =>{
+        window?.open('/Uzair-Resume.pdf', '_blank')
+    }
+
     return (
         <nav className="fixed top-0 w-full z-50 px-4 md:px-8 py-3
         backdrop-blur-xl bg-white/40 dark:bg-white/10
@@ -41,13 +45,14 @@ export default function Navbar() {
                         {/* Theme Toggle */}
                         <button
                             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                            className="p-2 rounded-full hover:bg-white/30 dark:hover:bg-white/20 transition"
+                            className="p-2 rounded-full hover:bg-[var(--app-gray-300)] transition"
                         >
                             {theme === "dark" ? <SunIcon size={18} /> : <MoonIcon size={18} />}
                         </button>
 
                         {/* Login Button */}
-                        <CustomButton btnType="download" className="flex gap-2">
+                        <CustomButton btnType="download" className="flex gap-2"
+                        onClick={handleDownloadCV}>
                             <span><Download /></span>
                             <span>Download CV</span>
                         </CustomButton>
@@ -92,7 +97,8 @@ export default function Navbar() {
                         </button>
 
                         {/* Login */}
-                        <CustomButton btnType="download" className="flex gap-2">
+                        <CustomButton btnType="download" className="flex gap-2"
+                        onClick={handleDownloadCV}>
                             <span><Download /></span>
                             <span>Download CV</span>
                         </CustomButton>
