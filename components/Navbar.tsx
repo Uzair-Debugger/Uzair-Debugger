@@ -1,41 +1,105 @@
 'use client'
 import React, { useState } from "react";
-import { LogIn, MoonIcon, SunIcon } from "lucide-react";
+import { LogIn, MoonIcon, SunIcon, Menu, X, Download } from "lucide-react";
 import Link from "next/link";
-import ThemeSwitcher from "./general/theme-switcher";
 import { useTheme } from "next-themes";
+import CustomButton from "./general/custom-button";
 
 export default function Navbar() {
     const { theme, setTheme } = useTheme();
+    const [open, setOpen] = useState(false);
 
+    return (
+        <nav className="fixed top-0 w-full z-50 px-4 md:px-8 py-3
+        backdrop-blur-xl bg-white/40 dark:bg-white/10
+        border-b border-white/20 shadow-lg">
 
-    return (<nav className="fixed top-0 w-full z-50 px-8 py-4 
-backdrop-blur-xl bg-white/60 border-b border-gray-200 shadow-sm">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
 
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+                {/* Logo */}
+                <img width={60} src="/image.png" alt="logo" className="cursor-pointer" />
 
-            <img width={70} src="/image.png" alt="logo" />
+                {/* Desktop Menu */}
+                <div className="flex gap-7">
 
-            <ul className="flex gap-8 text-sm font-medium text-gray-800">
-                <li><Link href="/home" className="hover:text-blue-600">Home</Link></li>
-                <li><Link href="/about" className="hover:text-blue-600">About</Link></li>
-                <li><Link href="/projects" className="hover:text-blue-600">Projects</Link></li>
-                <li><Link href="/services" className="hover:text-blue-600">Services</Link></li>
-            </ul>
+                    <ul className="hidden md:flex justify-center items-center gap-8 text-sm font-medium text-gray-800 dark:text-gray-200">
+                        <li>
+                            <Link href="/projects" className="hover:text-blue-500 transition">
+                                Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/services" className="hover:text-blue-500 transition">
+                                Services
+                            </Link>
+                        </li>
+                    </ul>
 
-            <div className="flex items-center gap-6 text-gray-800">
+                    {/* Right Side */}
+                    <div className="hidden md:flex items-center gap-4 text-gray-800 dark:text-gray-200">
+
+                        {/* Theme Toggle */}
+                        <button
+                            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                            className="p-2 rounded-full hover:bg-white/30 dark:hover:bg-white/20 transition"
+                        >
+                            {theme === "dark" ? <SunIcon size={18} /> : <MoonIcon size={18} />}
+                        </button>
+
+                        {/* Login Button */}
+                        <CustomButton btnType="download" className="flex gap-2">
+                            <span><Download /></span>
+                            <span>Download CV</span>
+                        </CustomButton>
+                    </div>
+                </div>
+
+                {/* Mobile Menu Button */}
                 <button
-                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                    className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+                    onClick={() => setOpen(!open)}
+                    className="md:hidden p-2 rounded-lg hover:bg-white/30 dark:hover:bg-white/20"
                 >
-                    {theme === "dark" ? <SunIcon size={20} /> : <MoonIcon size={20} />}
-                </button>
-
-                <button className="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-50">
-                    <LogIn size={18} /> Login
+                    {open ? <X size={22} /> : <Menu size={22} />}
                 </button>
             </div>
 
-        </div>
-    </nav>);
+            {/* Mobile Dropdown */}
+            <div className={`md:hidden mt-4 transition-all duration-300 ease-in-out
+            ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
+
+                <div className="flex flex-col gap-4 p-4 rounded-2xl
+                bg-white/30 dark:bg-white/10 backdrop-blur-xl
+                border border-white/20 shadow-md">
+
+                    <Link href="/projects" onClick={() => setOpen(false)}
+                        className="hover:text-blue-500 transition">
+                        Projects
+                    </Link>
+
+                    <Link href="/services" onClick={() => setOpen(false)}
+                        className="hover:text-blue-500 transition">
+                        Services
+                    </Link>
+
+                    <div className="flex items-center justify-between pt-2 border-t border-white/20">
+
+                        {/* Theme */}
+                        <button
+                            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                            className="p-2 rounded-full hover:bg-white/30"
+                        >
+                            {theme === "dark" ? <SunIcon size={18} /> : <MoonIcon size={18} />}
+                        </button>
+
+                        {/* Login */}
+                        <CustomButton btnType="download" className="flex gap-2">
+                            <span><Download /></span>
+                            <span>Download CV</span>
+                        </CustomButton>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    );
 }

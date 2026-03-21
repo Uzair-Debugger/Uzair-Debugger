@@ -15,11 +15,29 @@ export default function CustomButton({
 }: ButtonProps) {
 
   const btnTypeClasses: Record<string, string> = {
-    download: "bg-blue-600 hover:bg-blue-700 text-white",
-    submit: "bg-green-600 hover:bg-green-700 text-white",
-    preview: "bg-yellow-500 hover:bg-yellow-600 text-black",
-    link: "bg-transparent text-white hover:bg-gray-800"
-  }
+    download: `
+    bg-gray-700 hover:bg-gray-800 
+    text-white shadow-md hover:shadow-lg
+    focus:ring-2 focus:ring-blue-400
+  `,
+
+    submit: `
+    bg-emerald-600/90 hover:bg-emerald-700 
+    text-white shadow-md hover:shadow-lg
+    focus:ring-2 focus:ring-emerald-400
+  `,
+
+    preview: `
+    bg-amber-400/90 hover:bg-amber-500 
+    text-black shadow-sm hover:shadow-md
+    focus:ring-2 focus:ring-amber-300
+  `,
+
+    link: `
+    bg-[var(--app-gray-200)] text-[var(--app-gray-800)]
+    border border-white/20
+  `
+  };
 
   return (
     <button

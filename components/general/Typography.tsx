@@ -9,9 +9,9 @@ const typographyVariants = cva("", {
       h2: "text-3xl font-semibold md:text-4xl dark:text-white",
       h3: "text-2xl font-semibold dark:text-white",
       subtitle: "text-lg md:text-xl text-[var(--app-gray-300)]",
-      body1: "text-base md:text-lg text-[var(--app-gray-400)]",
-      body2: "text-base text-[var(--app-gray-400)]",
-      body3: "text-sm text-[var(--app-gray-500)]",
+      body1: "text-base md:text-lg text-[var(--app-gray-700)]",
+      body2: "text-base text-[var(--app-gray-700)]",
+      body3: "text-sm text-[var(--app-gray-700)]",
     },
   },
   defaultVariants: {
