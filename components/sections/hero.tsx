@@ -4,6 +4,7 @@ import Image from "next/image";
 import Container from "../layout/container";
 import Typography from "../general/Typography";
 import CustomButton from "../general/custom-button";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Hero() {
 
@@ -12,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center pb-8 pt-24 md:pt-28">
+    <section className="min-h-screen flex items-center py-8">
 
       <Container>
 
@@ -47,11 +48,21 @@ export default function Hero() {
 
             </div>
 
-            <div className="pt-4 flex justify-center lg:justify-start">
-              <CustomButton btnType="submit" onClick={handleClick}>
-                Contact Me
-              </CustomButton>
-            </div>
+            {/* Social Links */}
+                    <div className="flex gap-4 text-2xl text-[var(--app-gray-700)]">
+                        <a
+                            className="hover:bg-[var(--app-gray-100)] p-1 rounded-sm"
+                            href="https://github.com/Uzair-Debugger" target="_blank" rel="noopener noreferrer">
+
+                            <Github />
+                        </a>
+                        <a
+
+                            className="hover:bg-[var(--app-gray-100)] p-1 rounded-sm"
+                            href="https://www.linkedin.com/in/syed-muhammad-uzair-/" target="_blank" rel="noopener noreferrer">
+                            <Linkedin />
+                        </a>
+                    </div>
 
           </div>
 

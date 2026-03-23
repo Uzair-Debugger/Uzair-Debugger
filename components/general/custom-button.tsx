@@ -34,8 +34,8 @@ export default function CustomButton({
   `,
 
     link: `
-    bg-[var(--app-gray-200)] text-[var(--app-gray-800)]
-    border border-white/20
+    bg-[var(--app-gray-200)] text-[var(--app-gray-700)]
+     rounded-full px-3 py-1.5 text-sm
   `
   };
 

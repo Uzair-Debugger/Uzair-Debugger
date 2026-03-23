@@ -9,7 +9,7 @@ export default function AboutMe() {
     <div className="bg-[var(--app-gray-50)] min-h-screen flex items-center">
       <Container className="py-20 flex flex-col">
          {/* Button */}
-            <CustomButton btnType="link" className="mx-auto mb-6 rounded-full px-5 py-2 text-sm">
+            <CustomButton btnType="link" className="mx-auto mb-6">
               About me
             </CustomButton>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
