@@ -21,20 +21,25 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
 
                 {/* Logo */}
-                <img width={60} src="/image.png" alt="logo" className="cursor-pointer" />
+                <span className="font-bold text-3xl text-[var(--app-gray-800)]">{`<Ur />`}</span>
 
                 {/* Desktop Menu */}
                 <div className="flex gap-7">
 
                     <ul className="hidden md:flex justify-center items-center gap-8 text-sm font-medium text-gray-800 dark:text-gray-200">
                         <li>
-                            <Link href="/projects" className="hover:text-blue-500 transition">
+                            <Link href="/" className="hover:text-blue-500 transition">
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/" className="hover:text-blue-500 transition">
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link href="/services" className="hover:text-blue-500 transition">
-                                Services
+                            <Link href="/" className="hover:text-blue-500 transition">
+                                Contact
                             </Link>
                         </li>
                     </ul>
@@ -76,14 +81,18 @@ export default function Navbar() {
                 bg-white/30 dark:bg-white/10 backdrop-blur-xl
                 border border-white/20 shadow-md">
 
-                    <Link href="/projects" onClick={() => setOpen(false)}
+                    <Link href="/" onClick={() => setOpen(false)}
+                        className="hover:text-blue-500 transition">
+                        About
+                    </Link>
+                    <Link href="/" onClick={() => setOpen(false)}
                         className="hover:text-blue-500 transition">
                         Projects
                     </Link>
 
-                    <Link href="/services" onClick={() => setOpen(false)}
+                    <Link href="/" onClick={() => setOpen(false)}
                         className="hover:text-blue-500 transition">
-                        Services
+                        Contact
                     </Link>
 
                     <div className="flex items-center justify-between pt-2 border-t border-white/20">

@@ -8,10 +8,15 @@ export default function AboutMe() {
   return (
     <div className="bg-[var(--app-gray-50)] min-h-screen flex items-center">
       <Container className="py-20 flex flex-col">
+        
          {/* Button */}
-            <CustomButton btnType="link" className="mx-auto mb-6">
+            <CustomButton btnType="link" className="mx-auto ">
               About me
             </CustomButton>
+            <Container className="flex flex-col justify-center mb-6 items-center gap-3">
+                <Typography variant="h2">About me</Typography>
+               </Container>
+
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* LEFT IMAGE SECTION */}

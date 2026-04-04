@@ -12,19 +12,24 @@ export default function SkillsSection() {
       <Container className="py-20 text-center">
         
         {/* Top Button */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6 flex-col items-center">
           <CustomButton
             btnType="link"
-            className="rounded-full px-5 py-2 text-sm"
+            className="rounded-full "
           >
             Skills
           </CustomButton>
+
+          <Container className="flex flex-col justify-center items-center gap-3">
+                <Typography variant="h2">Skills & Technologies</Typography>
+                <Typography variant="h3" className="">
+          The skills, tools and technologies I am really good at:
+        </Typography>
+                </Container>
         </div>
 
         {/* Heading */}
-        <Typography variant="h3" className="mb-14">
-          The skills, tools and technologies I am really good at:
-        </Typography>
+        
 
         {/* Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-y-12 gap-x-8 items-center justify-items-center">

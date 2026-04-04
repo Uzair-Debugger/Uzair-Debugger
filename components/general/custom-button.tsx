@@ -4,11 +4,11 @@ import React from "react";
 import { mergeClasses } from "../lib/utils";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  btnType?: "download" | "submit" | "preview" | "link";
+  btnType?: "download" | "visit" | "preview" | "link";
 }
 
 export default function CustomButton({
-  btnType = "submit",
+  btnType = "visit",
   children,
   className,
   ...props
@@ -21,21 +21,19 @@ export default function CustomButton({
     focus:ring-2 focus:ring-blue-400
   `,
 
-    submit: `
-    bg-emerald-600/90 hover:bg-emerald-700 
-    text-white shadow-md hover:shadow-lg
-    focus:ring-2 focus:ring-emerald-400
+    visit: `
+    bg-[var(--app-gray-default)] hover:bg-[var(--app-gray-default)] 
+    p-2 
   `,
 
     preview: `
-    bg-amber-400/90 hover:bg-amber-500 
-    text-black shadow-sm hover:shadow-md
+    bg-[var(--app-gray-50)] hover:bg-[var(--app-gray-100)] 
     focus:ring-2 focus:ring-amber-300
   `,
 
     link: `
     bg-[var(--app-gray-200)] text-[var(--app-gray-700)]
-     rounded-full px-3 py-1.5 text-sm
+     rounded-full px-3 py-1 text-sm
   `
   };
 

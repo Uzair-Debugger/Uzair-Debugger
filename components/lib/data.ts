@@ -31,9 +31,11 @@ export const projects = [
       "Llama-3.1-8B-Instant API",
       "FFmpeg",
     ],
-    image: "/projects/youtube-shorts.png",
+    image: "/projects/youtube_shorts_converter.png",
     category: "AI / Video Processing",
     status: "Completed",
+    githubLink: "https://github.com/Uzair-Debugger/Youtube_Shorts_Converter",
+    liveLink: "",
   },
 
   {
@@ -60,6 +62,8 @@ export const projects = [
     image: "/projects/ecommerce.png",
     category: "Full Stack",
     status: "Completed",
+    githubLink: "https://github.com/Uzair-Debugger/Ecommerce-Website",
+    liveLink: "",
   },
 
   {
@@ -80,6 +84,8 @@ export const projects = [
     image: "/projects/hospital.png",
     category: "Frontend",
     status: "Completed",
+    githubLink: "https://github.com/Uzair-Debugger/HospitalWebsite_React",
+    liveLink: "",
   },
 ];
 

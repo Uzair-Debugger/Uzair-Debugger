@@ -22,7 +22,7 @@ export default function Hero() {
           {/* LEFT SIDE */}
           <div className="space-y-6 text-center lg:text-left">
 
-            <Typography variant="h2">
+            <Typography variant="body1" className="text-3xl md:text-4xl font-semibold">
               Hi, I'm
             </Typography>
 
@@ -49,7 +49,7 @@ export default function Hero() {
             </div>
 
             {/* Social Links */}
-                    <div className="flex gap-4 text-2xl text-[var(--app-gray-700)]">
+                    <div className="flex my-4 justify-center gap-4 text-2xl text-[var(--app-gray-700)]">
                         <a
                             className="hover:bg-[var(--app-gray-100)] p-1 rounded-sm"
                             href="https://github.com/Uzair-Debugger" target="_blank" rel="noopener noreferrer">
