@@ -54,7 +54,7 @@ export default function AboutMe() {
             </Typography>
 
             <Typography variant="body1" className="mb-5 leading-relaxed">
-              I began my web development career in 2022, and since then, I've continually expanded my skills. Each project has fueled my growth as a full stack developer, driving my passion for creating efficient, user-friendly web applications.
+              I began my web development career in 2023, and since then, I've continually expanded my skills. Each project has fueled my growth as a full stack developer, driving my passion for creating efficient, user-friendly web applications.
             </Typography>
 
             <Typography variant="body1" className="mb-5 leading-relaxed">
