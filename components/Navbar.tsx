@@ -5,6 +5,17 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import CustomButton from "./general/custom-button";
 
+const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
+};
+
 export default function Navbar() {
     const { theme, setTheme } = useTheme();
     const [open, setOpen] = useState(false);
@@ -28,19 +39,19 @@ export default function Navbar() {
 
                     <ul className="hidden md:flex justify-center items-center gap-8 text-sm font-medium text-gray-800 dark:text-gray-200">
                         <li>
-                            <Link href="/" className="hover:text-blue-500 transition">
+                            <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-blue-500 transition cursor-pointer">
                                 About
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link href="/" className="hover:text-blue-500 transition">
+                            <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="hover:text-blue-500 transition cursor-pointer">
                                 Projects
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link href="/" className="hover:text-blue-500 transition">
+                            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="hover:text-blue-500 transition cursor-pointer">
                                 Contact
-                            </Link>
+                            </a>
                         </li>
                     </ul>
 
@@ -81,19 +92,19 @@ export default function Navbar() {
                 bg-white/30 dark:bg-white/10 backdrop-blur-xl
                 border border-white/20 shadow-md">
 
-                    <Link href="/" onClick={() => setOpen(false)}
-                        className="hover:text-blue-500 transition">
+                    <a href="#about" onClick={(e) => { scrollToSection(e, 'about'); setOpen(false); }}
+                        className="hover:text-blue-500 transition cursor-pointer">
                         About
-                    </Link>
-                    <Link href="/" onClick={() => setOpen(false)}
-                        className="hover:text-blue-500 transition">
+                    </a>
+                    <a href="#projects" onClick={(e) => { scrollToSection(e, 'projects'); setOpen(false); }}
+                        className="hover:text-blue-500 transition cursor-pointer">
                         Projects
-                    </Link>
+                    </a>
 
-                    <Link href="/" onClick={() => setOpen(false)}
-                        className="hover:text-blue-500 transition">
+                    <a href="#contact" onClick={(e) => { scrollToSection(e, 'contact'); setOpen(false); }}
+                        className="hover:text-blue-500 transition cursor-pointer">
                         Contact
-                    </Link>
+                    </a>
 
                     <div className="flex items-center justify-between pt-2 border-t border-white/20">
 

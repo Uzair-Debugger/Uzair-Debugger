@@ -7,7 +7,7 @@ import Container from "../layout/container";
 
 export default function Projects() {
     return (
-        <section className="bg-[var(--app-gray-50)] py-20">
+        <section id="projects" className="bg-[var(--app-gray-50)] py-20">
             <div className="flex justify-center flex-col items-center">
                 <CustomButton btnType="link">Projects</CustomButton>
                 <Container className="flex flex-col justify-center items-center gap-3 text-center">

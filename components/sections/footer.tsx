@@ -6,7 +6,7 @@ import CustomButton from "../general/custom-button";
 
 export default function Footer() {
     return (
-        <footer className="py-5">
+        <footer id="contact" className="py-5">
             <Container className="flex flex-col items-center p-10 gap-6">
 
                 {/* About / Connect */}

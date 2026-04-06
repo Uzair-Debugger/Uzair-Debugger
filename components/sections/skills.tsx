@@ -8,7 +8,7 @@ import { skills } from "../lib/data";
 
 export default function SkillsSection() {
   return (
-    <div className="">
+    <div id="skills" className="">
       <Container className="py-20 text-center">
         
         {/* Top Button */}

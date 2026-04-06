@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <div className="bg-[var(--app-gray-50)] min-h-screen flex items-center">
+    <div id="about" className="bg-[var(--app-gray-50)] min-h-screen flex items-center">
       <Container className="py-20 flex flex-col">
         
          {/* Button */}
