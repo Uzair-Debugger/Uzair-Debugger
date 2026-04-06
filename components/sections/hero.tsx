@@ -17,17 +17,17 @@ export default function Hero() {
 
       <Container>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-5 p-5 md:gap-14 lg:gap-16 items-center">
 
           {/* LEFT SIDE */}
-          <div className="space-y-6 text-center lg:text-left">
+          <div className="space-y-6 lg:mt-0 mt-12 col-span-2 text-center order-2 lg:text-left lg:order-1">
 
             <Typography variant="body1" className="text-3xl md:text-4xl font-semibold">
               Hi, I'm
             </Typography>
 
             <Typography variant="h1" className="leading-tight">
-              Syed Muhammad Uzair 👋
+              Syed Muhammad <span className="whitespace-nowrap">Uzair 👋</span>
             </Typography>
 
             <Typography variant="body1" className="max-w-xl mx-auto lg:mx-0">
@@ -67,7 +67,7 @@ export default function Hero() {
           </div>
 
           {/* RIGHT SIDE IMAGE */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
 
             <div className="relative w-full max-w-[220px] sm:max-w-[260px] md:max-w-[300px]">
 
