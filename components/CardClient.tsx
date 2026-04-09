@@ -51,9 +51,10 @@ export default function CardClient({ project, index }: typeProject) {
                     {/* Buttons */}
                     <div className="w-full my-8 flex gap-5">
                         <CustomButton
-                            className="relative group cursor-not-allowed"
+                            className={`relative group ${!project.liveLink ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                             onClick={(e) => {
-                                if (!project.liveLink) e.preventDefault(); // prevent click if not deployed
+                                if (!project.liveLink) e.preventDefault();
+                                else window.open(project.liveLink, '_blank', 'noopener,noreferrer');
                             }}
                             aria-label="Currently not deployed"
                         >

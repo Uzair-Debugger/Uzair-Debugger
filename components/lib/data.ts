@@ -67,26 +67,33 @@ export const projects = [
   },
 
   {
-    id: "hospital-website",
-    title: "Hospital Website",
-    description:
-      "A responsive frontend website for a hospital showcasing services, doctors, and contact information.",
-    features: [
-      "Modern responsive UI",
-      "Reusable React components",
-      "Service and department pages",
-      "Contact and appointment sections",
-    ],
-    techStack: [
-      "React.js",
-      "CSS",
-    ],
-    image: "/projects/hospital.png",
-    category: "Frontend",
-    status: "Completed",
-    githubLink: "https://github.com/Uzair-Debugger/HospitalWebsite_React",
-    liveLink: "",
-  },
+  id: "medocbills-healthcare",
+  title: "MedocBills Healthcare Website",
+  description:
+    "A production-ready healthcare revenue cycle management (RCM) and medical billing website for MedocBills, featuring service pages, client-focused workflows, careers, and lead capture forms.",
+  features: [
+    "Responsive multi-page SPA (Home, Services, About, Contact, Career, Clients)",
+    "SEO-ready pages with meta tags, canonical URLs, Open Graph, and JSON-LD schema",
+    "Interactive UI with sliders, animated sections, testimonials, and counters",
+    "Career listing page with searchable job cards",
+    "Contact and callback forms with client-side validation",
+    "Vercel-ready deployment with SPA route rewrites",
+  ],
+  techStack: [
+    "React.js",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "React Router DOM",
+    "React Helmet Async",
+  ],
+  image: "/projects/medocbills.png",
+  category: "Frontend",
+  status: "Completed",
+  githubLink: "https://github.com/Uzair-Debugger/MedocBills-Healthcare--main",
+  liveLink: "https://www.medocbills.com",
+},
 ];
 
 
