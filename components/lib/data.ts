@@ -63,7 +63,7 @@ export const projects = [
     category: "Full Stack",
     status: "Completed",
     githubLink: "https://github.com/Uzair-Debugger/Ecommerce-Website",
-    liveLink: "",
+    liveLink: "https://ecommerce-frontend-chi-ten-25.vercel.app",
   },
 
   {
