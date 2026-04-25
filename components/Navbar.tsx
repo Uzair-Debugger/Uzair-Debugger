@@ -20,8 +20,8 @@ export default function Navbar() {
     const { theme, setTheme } = useTheme();
     const [open, setOpen] = useState(false);
 
-    const handleDownloadCV = () =>{
-        window?.open('/Uzair-Resume.pdf', '_blank')
+    const handleDownloadCV = () => {
+        window?.open('/Resume.pdf', '_blank')
     }
 
     return (
@@ -68,7 +68,7 @@ export default function Navbar() {
 
                         {/* Login Button */}
                         <CustomButton btnType="download" className="flex gap-2"
-                        onClick={handleDownloadCV}>
+                            onClick={handleDownloadCV}>
                             <span><Download /></span>
                             <span>Download CV</span>
                         </CustomButton>
@@ -118,7 +118,7 @@ export default function Navbar() {
 
                         {/* Login */}
                         <CustomButton btnType="download" className="flex gap-2"
-                        onClick={handleDownloadCV}>
+                            onClick={handleDownloadCV}>
                             <span><Download /></span>
                             <span>Download CV</span>
                         </CustomButton>
