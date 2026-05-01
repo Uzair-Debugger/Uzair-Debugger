@@ -17,7 +17,7 @@ export default function CardClient({ project, index }: typeProject) {
                 {/* Image */}
                 <div
                     className={`${isEven ? 'md:order-1' : 'md:order-2'
-                        } flex items-center justify-center h-[250px] sm:h-[400px] overflow-hidden bg-[var(--app-gray-100)] w-full ${isEven?`rounded-l-md md:rounded-l-md md:rounded-r-none`:`rounded-r-md md:rounded-r-md md:rounded-l-none`}`}
+                        } flex items-center justify-center h-[250px] sm:h-[432px] overflow-hidden bg-[var(--app-gray-100)] w-full ${isEven ? `rounded-l-md md:rounded-l-md md:rounded-r-none` : `rounded-r-md md:rounded-r-md md:rounded-l-none`}`}
                 >
                     <img
                         src={project.image}
@@ -30,7 +30,7 @@ export default function CardClient({ project, index }: typeProject) {
                 {/* Content */}
                 <div
                     className={`${isEven ? 'md:order-2' : 'md:order-1'
-                        } flex flex-col p-5 pt-10 h-full bg-[var(--app-gray-100)] w-full ${isEven?`rounded-r-md md:rounded-r-md md:rounded-l-none`:`rounded-l-md md:rounded-l-md md:rounded-r-none`}`}
+                        } flex flex-col p-5 pt-10 h-full bg-[var(--app-gray-100)] w-full ${isEven ? `rounded-r-md md:rounded-r-md md:rounded-l-none` : `rounded-l-md md:rounded-l-md md:rounded-r-none`}`}
                 >
                     <Typography variant="h3" className="text-center">
                         {project.title}

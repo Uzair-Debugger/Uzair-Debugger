@@ -14,6 +14,44 @@ export const skills = [
 
 export const projects = [
   {
+  id: "pin-code",
+  title: "Pin Code - Code Snippet Manager",
+  description:
+    "A production-grade full-stack snippet management platform where developers can capture, organize, search, and reuse code snippets. Features secure JWT authentication, full-text search with ranked results, nested collections, and a clean responsive dashboard.",
+  features: [
+    "JWT authentication with short-lived access tokens and rotating httpOnly refresh cookies",
+    "Full-text search across title, code, and tags using PostgreSQL GIN-indexed tsvector with ranked results",
+    "Create, edit, delete, and favorite snippets with language metadata and optional notes",
+    "Nested collections (folder hierarchy) via self-referential schema for snippet organization",
+    "Paginated snippet listing with language filter, favorites filter, and debounced search",
+    "Silent token refresh with request deduplication and in-memory token storage",
+    "Integration test suite covering auth, snippets, notes, and collections with Supertest + Jest",
+    "Clean layered backend architecture: routes → controllers → services → repositories",
+  ],
+  techStack: [
+    "Next.js 16 (App Router)",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS v4",
+    "Axios",
+    "Node.js",
+    "Express.js",
+    "Prisma ORM",
+    "PostgreSQL",
+    "Zod",
+    "JWT",
+    "bcrypt",
+    "Jest",
+    "Supertest",
+  ],
+  image: "/projects/pincode.png",
+  category: "Full Stack",
+  status: "Completed",
+  githubLink: "https://github.com/Uzair-Debugger/pincode",
+  liveLink: "https://pincode-frontend.vercel.app",
+  },
+
+  {
     id: "youtube-shorts-converter",
     title: "YouTube Shorts Converter",
     description:
