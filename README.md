@@ -1,106 +1,158 @@
-<!-- Hero Section -->
-<img src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif" width="100%" height="260">
+# Hi, I'm Syed Muhammad Uzair 👋
 
-<div align="center">
-  <h1>Hi, I'm Syed Muhammad Uzair</h1>
-  <h3>Junior Full-Stack Developer | MERN · Next.js · AI</h3>
-</div>
+### Full-Stack Engineer | Backend Systems | AI-Powered Applications
 
-<p align="center">
-  <img 
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=005fcbff&center=true&vCenter=true&width=760&lines=Full-Stack+Developer;MERN+%7C+Next.js+%7C+FastAPI+Engineer;Full-Stack+AI+Developer;Production+ready+Web+Applications+And+API+development"
-    alt="Typing SVG"
-  />
-</p>
+I build scalable full-stack applications with a strong focus on backend architecture, authentication systems, search optimization, and AI-integrated workflows.
+
+Currently focused on:
+- Production-grade backend engineering
+- Secure authentication & authorization systems
+- AI-powered automation
+- Search & data-intensive applications
+- Scalable API architecture
 
 ---
 
-## 👨‍💻 About Me
+# 🚀 Featured Projects
 
-I’m a **results-driven Full-Stack Developer** focused on building **scalable, production-ready web applications** using modern JavaScript technologies.
+## 📌 Pin Code — Code Snippet Management Platform
 
-- Strong hands-on experience with **MERN & Next.js**
-- Comfortable working with **existing/legacy codebases** and extending them
-- Good Knowledge of developing **Full-Stack AI applications**
-- Built **real-time systems, CMS platforms, and client-facing products**
-- Passionate about **clean backend logic, APIs, and system design**
+A production-grade full-stack platform for developers to capture, organize, search, and manage reusable code snippets efficiently.
 
-🎓 Computer Software Engineering student  
-🚀 Actively seeking **Junior / Trainee / Internship roles**
+### Highlights
+- JWT authentication with rotating refresh tokens & httpOnly cookies
+- Full-text PostgreSQL search using GIN-indexed `tsvector`
+- Nested collections using self-referential relational schema
+- Silent token refresh with request deduplication
+- Layered backend architecture:
+  `routes → controllers → services → repositories`
+- Integration testing using Jest + Supertest
+
+### Tech Stack
+`Next.js 16` `React 19` `TypeScript` `Node.js`
+`Express.js` `PostgreSQL` `Prisma ORM`
+`JWT` `Zod` `Tailwind CSS`
+
+🔗 **Live:** https://pincode-frontend.vercel.app  
+🔗 **GitHub:** https://github.com/Uzair-Debugger/pincode
 
 ---
 
-## 🛠️ Tech Stack
+## 🎬 YouTube Shorts Converter
+
+An AI-powered media processing application that converts long-form videos into engaging short-form content automatically.
+
+### Highlights
+- Video transcription using Whisper large-v3
+- AI highlight detection using Llama 3.1
+- FFmpeg-powered media processing pipeline
+- Automated shorts generation workflow
+- Audio extraction, scaling, compression & clipping
+
+### Tech Stack
+`Next.js` `Express.js`
+`Whisper API` `Llama 3.1`
+`FFmpeg`
+
+🔗 **GitHub:** https://github.com/Uzair-Debugger/Youtube_Shorts_Converter
+
+---
+
+## 🛒 Full Stack Ecommerce Platform
+
+A secure ecommerce application with authentication, product management, and transactional workflows.
+
+### Highlights
+- JWT authentication & role authorization
+- REST API architecture using Flask
+- MySQL database with SQLAlchemy ORM
+- Order lifecycle tracking
+- Admin sales dashboard
+- Category-based product filtering
+
+### Tech Stack
+`React.js` `Flask`
+`MySQL` `SQLAlchemy`
+`JWT Authentication`
+
+🔗 **Live:** https://ecommerce-frontend-chi-ten-25.vercel.app  
+🔗 **GitHub:** https://github.com/Uzair-Debugger/Ecommerce-Website
+
+---
+
+## 🏥 MedocBills Healthcare Platform
+
+A production-ready healthcare RCM and medical billing website focused on client acquisition, service accessibility, and SEO optimization.
+
+### Highlights
+- Responsive multi-page SPA architecture
+- SEO optimization using Open Graph & JSON-LD schema
+- Career system with searchable listings
+- Interactive UI animations with Framer Motion
+- Lead capture & callback workflows
+- Vercel-ready deployment configuration
+
+### Tech Stack
+`React.js` `TypeScript`
+`Vite` `Tailwind CSS`
+`Framer Motion`
+
+🔗 **Live:** https://www.medocbills.com  
+🔗 **GitHub:** https://github.com/Uzair-Debugger/MedocBills-Healthcare--main
+
+---
+
+# 🛠️ Tech Stack
 
 ### Frontend
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,next,redux" />
-</p>
+![Frontend](https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs)
 
-### Backend & Databases
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,flask,fastapi,postgres,mysql,mongodb,postgres)](https://skillicons.dev" />
-</p>
+### Backend
+![Backend](https://skillicons.dev/icons?i=nodejs,express,flask,fastapi)
 
-### For AI-Powered Web-Applications
-<p align="center">
-  <img width=40px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpNJvuExhKeAlqL12DCX2TE1leB1U2d6UlnC38rghwBA&s" />
-  <img width=40px src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/meta-color.png" />
-</p>
+### Databases & ORM
+![Database](https://skillicons.dev/icons?i=postgres,mysql,mongodb)
 
-### Version Control
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github" />
-</p>
+### Tools & Testing
+![Tools](https://skillicons.dev/icons?i=git,github,docker,jest)
+
+### AI & Media Processing
+- OpenAI Whisper
+- Llama 3.1
+- FFmpeg
 
 ---
 
-## 🚀 Featured Projects
+# 📊 GitHub Stats
 
-| Project | Description | Tech Stack |
-|------|------------|-----------|
-| **Shortify** | Developed a high performance website to convert YouTube videos into most engaging YouTube Shorts using OpenAI Whisper model for audio Transcription, Meta's Llama-8b-Instant for identifying the best part based on Transcription and Ffmpeg for processing video file. | Next.js, Node.js, OpenAI Whisper Model, Meta's Llama-8b-Instant, Ffmpeg |
-| **Medocbills – (Client Project)** | Developed Interactive UI to enable smooth expression for the clients, Integrated email service to enable clients to directly interact with the admin and get billing service. | MERN Stack |
-| **Ecommerce Website** |Robust JWT authentication and authorization. Developed core business logic for sales and checkout management .| React.js, Flask, MySQL, JWT Authentication |
-
----
-
-## 📊 GitHub Activity
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Uzair-Debugger&theme=dark"/>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Uzair-Debugger&theme=tokyonight" />
+</p>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Uzair-Debugger&theme=tokyonight" width="45%" />
+  
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Uzair-Debugger&theme=tokyonight&utcOffset=+5" width="45%" />
 </p>
 
-</div>
-
 ---
 
-## 🤝 Open To Opportunities
+# 🌐 Connect With Me
 
-- Junior Full-Stack / Backend Developer Roles  
-- Software Engineering Internships  
-- Freelance & Contract Work  
-- Open-Source Collaboration  
+<p align="left">
+  <a href="mailto:smuzair14cse@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
 
----
+  <a href="https://www.linkedin.com/in/syed-muhammad-uzair-">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
 
-## 📬 Connect With Me
-
-<p align="center">
-  <a href="mailto:smuzair14cse@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" /></a>
-  <a href="https://www.linkedin.com/in/syed-muhammad-uzair-/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
- 
+  <a href="https://iam-uzair.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
 </p>
 
 ---
 
-<div align="center">
-
-[![Explore My GitHub](https://img.shields.io/badge/Explore%20My%20Work-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Uzair-Debugger)
-
-</div>
+⭐ Passionate about building scalable systems, secure backend architectures, and AI-enhanced products.
