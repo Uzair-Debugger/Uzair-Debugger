@@ -98,7 +98,7 @@ A production-ready healthcare RCM and medical billing website focused on client 
 `Framer Motion`
 
 🔗 **Live:** https://www.medocbills.com  
-🔗 **GitHub:** https://github.com/Uzair-Debugger/MedocBills-Healthcare--main
+🔗 **GitHub:** https://github.com/Uzair-Debugger/MedocBills-Healthcare
 
 ---
 
