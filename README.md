@@ -1,158 +1,138 @@
-# Hi, I'm Syed Muhammad Uzair 👋
+<div align="center">
 
-### Full-Stack Engineer | Backend Systems | AI-Powered Applications
+# Syed Muhammad Uzair
 
-I build scalable full-stack applications with a strong focus on backend architecture, authentication systems, search optimization, and AI-integrated workflows.
+### Full-Stack Engineer — Backend Architecture · Authentication Systems · AI-Integrated Apps
 
-Currently focused on:
-- Production-grade backend engineering
-- Secure authentication & authorization systems
-- AI-powered automation
-- Search & data-intensive applications
-- Scalable API architecture
+I design and ship production-grade systems: secure auth flows, search-optimized databases, and AI-powered pipelines — end to end, frontend to infrastructure.
 
----
-
-# 🚀 Featured Projects
-
-## 📌 Pin Code — Code Snippet Management Platform
-
-A production-grade full-stack platform for developers to capture, organize, search, and manage reusable code snippets efficiently.
-
-### Highlights
-- JWT authentication with rotating refresh tokens & httpOnly cookies
-- Full-text PostgreSQL search using GIN-indexed `tsvector`
-- Nested collections using self-referential relational schema
-- Silent token refresh with request deduplication
-- Layered backend architecture:
-  `routes → controllers → services → repositories`
-- Integration testing using Jest + Supertest
-
-### Tech Stack
-`Next.js 16` `React 19` `TypeScript` `Node.js`
-`Express.js` `PostgreSQL` `Prisma ORM`
-`JWT` `Zod` `Tailwind CSS`
-
-🔗 **Live:** https://pincode-frontend.vercel.app  
-🔗 **GitHub:** https://github.com/Uzair-Debugger/pincode
-
----
-
-## 🎬 YouTube Shorts Converter
-
-An AI-powered media processing application that converts long-form videos into engaging short-form content automatically.
-
-### Highlights
-- Video transcription using Whisper large-v3
-- AI highlight detection using Llama 3.1
-- FFmpeg-powered media processing pipeline
-- Automated shorts generation workflow
-- Audio extraction, scaling, compression & clipping
-
-### Tech Stack
-`Next.js` `Express.js`
-`Whisper API` `Llama 3.1`
-`FFmpeg`
-
-🔗 **GitHub:** https://github.com/Uzair-Debugger/Youtube_Shorts_Converter
-
----
-
-## 🛒 Full Stack Ecommerce Platform
-
-A secure ecommerce application with authentication, product management, and transactional workflows.
-
-### Highlights
-- JWT authentication & role authorization
-- REST API architecture using Flask
-- MySQL database with SQLAlchemy ORM
-- Order lifecycle tracking
-- Admin sales dashboard
-- Category-based product filtering
-
-### Tech Stack
-`React.js` `Flask`
-`MySQL` `SQLAlchemy`
-`JWT Authentication`
-
-🔗 **Live:** https://ecommerce-frontend-chi-ten-25.vercel.app  
-🔗 **GitHub:** https://github.com/Uzair-Debugger/Ecommerce-Website
-
----
-
-## 🏥 MedocBills Healthcare Platform
-
-A production-ready healthcare RCM and medical billing website focused on client acquisition, service accessibility, and SEO optimization.
-
-### Highlights
-- Responsive multi-page SPA architecture
-- SEO optimization using Open Graph & JSON-LD schema
-- Career system with searchable listings
-- Interactive UI animations with Framer Motion
-- Lead capture & callback workflows
-- Vercel-ready deployment configuration
-
-### Tech Stack
-`React.js` `TypeScript`
-`Vite` `Tailwind CSS`
-`Framer Motion`
-
-🔗 **Live:** https://www.medocbills.com  
-🔗 **GitHub:** https://github.com/Uzair-Debugger/MedocBills-Healthcare
-
----
-
-# 🛠️ Tech Stack
-
-### Frontend
-![Frontend](https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs)
-
-### Backend
-![Backend](https://skillicons.dev/icons?i=nodejs,express,flask,fastapi)
-
-### Databases & ORM
-![Database](https://skillicons.dev/icons?i=postgres,mysql,mongodb)
-
-### Tools & Testing
-![Tools](https://skillicons.dev/icons?i=git,github,docker,jest)
-
-### AI & Media Processing
-- OpenAI Whisper
-- Llama 3.1
-- FFmpeg
-
----
-
-# 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Uzair-Debugger&theme=tokyonight" />
+<p>
+  <a href="mailto:smuzair14cse@gmail.com">
+    <img src="https://img.shields.io/badge/GMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://www.linkedin.com/in/syed-muhammad-uzair-">
+    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://iam-uzair.vercel.app/">
+    <img src="https://img.shields.io/badge/PORTFOLIO-000000?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" />
+  </a>
 </p>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Uzair-Debugger&theme=tokyonight" width="45%" />
-  
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Uzair-Debugger&theme=tokyonight&utcOffset=+5" width="45%" />
-</p>
+</div>
 
 ---
 
-# 🌐 Connect With Me
+### 🔭 Currently Exploring
+
+Deepening my backend engineering craft — distributed systems patterns, advanced authentication/authorization design, and scalable API architecture — while exploring **LLM engineering**: RAG pipelines, prompt/context design, and integrating AI agents into production systems.
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | Next.js · React · TypeScript · Tailwind CSS · Vite · Framer Motion |
+| **Backend** | Node.js · Express.js · Flask · FastAPI |
+| **Databases / ORM** | PostgreSQL · MySQL · MongoDB · Prisma · SQLAlchemy |
+| **Auth & Security** | JWT (access + rotating refresh tokens) · OAuth 2.0 · bcrypt · Zod validation |
+| **AI / Media** | OpenAI Whisper · Llama 3.1 · Groq API · RAG (vector search) · FFmpeg |
+| **Infra / Tooling** | Git/GitHub · Upstash Redis |
+
+---
+
+## 🚀 Featured Projects
+
+### 📌 [Pin Code](https://github.com/Uzair-Debugger/pincode) — Code Snippet Management Platform
+A production-grade platform for developers to capture, organize, search, and reuse code snippets.
+
+- JWT auth with **rotating refresh tokens** and httpOnly cookies, plus silent token refresh with request deduplication
+- **Full-text PostgreSQL search** using GIN-indexed `tsvector`, with title matches ranked above code-only matches
+- Self-referential schema for **nested collections**, and explicit join tables (`SnippetTag`, `SnippetCollection`) for extensibility
+- Layered backend: `routes → controllers → services → repositories`, covered by Jest + Supertest integration tests
+
+`Next.js 16` `React 19` `TypeScript` `Express.js` `PostgreSQL` `Prisma` `JWT` `Zod`
+
+**[Live](https://pincode-frontend.vercel.app)** · **[Code](https://github.com/Uzair-Debugger/pincode)**
+
+---
+
+### 🤖 NexaSupport — AI Customer Support SaaS
+Deploy an AI support chatbot on any website with a single script tag — no backend code required for the end user.
+
+- **RAG pipeline**: uploaded knowledge files are chunked, embedded (HuggingFace BGE), and stored in a Qdrant vector database for grounded retrieval
+- Streaming, token-by-token LLM responses via Groq
+- OAuth 2.0 (Scalekit) with HTTP-only session cookies — tokens never touch client-side JS
+- Fully brandable widget (colors, logo, position) with real-time contrast validation, delivered as a self-contained JS bundle via esbuild
+- Upstash Redis rate limiting across all public endpoints
+
+`Next.js 16` `TypeScript` `Prisma` `Qdrant` `Groq` `Scalekit OAuth` `Upstash Redis`
+
+**[Live](https://ai-customer-support-agent-nine.vercel.app)** · **[Code](https://github.com/Uzair-Debugger/AI-Customer-Support-Agent)** 
+
+---
+
+### 🎬 [YouTube Shorts AI Converter](https://github.com/Uzair-Debugger/Youtube_Shorts_Converter)
+Turns long-form YouTube videos into multiple short clips automatically.
+
+- `yt-dlp` download → audio extraction/compression → **Groq Whisper transcription** → LLM-based highlight selection → `ffmpeg` clipping into individual shorts
+- Async job pipeline: `POST /api/convert` kicks off background processing, polled via `GET /api/status/:jobId`
+- Per-short metadata returned (title, hook, reason, duration, file size) via a dedicated shorts endpoint
+
+`Next.js` `Express.js` `Groq (Whisper + LLM)` `yt-dlp` `FFmpeg`
+
+**[Code](https://github.com/Uzair-Debugger/Youtube_Shorts_Converter)**
+
+---
+
+### 🏥 [MedocBills Healthcare](https://www.medocbills.com)
+Production, client-facing healthcare RCM and medical billing site — *now expanding into a full-stack platform (see above).*
+
+- Multi-page SPA (Home, Services, Career, Clients, About) with per-page **SEO metadata**, Open Graph, and JSON-LD structured data (organization, FAQ, job postings)
+- Searchable/filterable career listings, testimonial carousel, animated counters via Framer Motion
+- Production Vite build: Terser minification + vendor chunk splitting, deployed on Vercel with SPA rewrites
+
+`React` `TypeScript` `Vite` `Tailwind CSS` `Framer Motion` `React Helmet Async`
+
+**[Live](https://www.medocbills.com)** · **[Code](https://github.com/Uzair-Debugger/MedocBills-Healthcare)**
+
+---
+
+### 🛒 [Tech-Tronics E-Commerce](https://ecommerce-frontend-chi-ten-25.vercel.app)
+Full-stack e-commerce app with a React frontend and Flask REST API.
+
+- JWT auth with role-based UI (admin/user), full cart → checkout → order-history flow
+- Admin dashboard for product CRUD and order status tracking
+- Flask + SQLAlchemy backend with Supabase-backed image storage
+
+`React 19` `Flask` `MySQL` `SQLAlchemy` `JWT`
+
+**[Live](https://ecommerce-frontend-chi-ten-25.vercel.app)** · **[Code](https://github.com/Uzair-Debugger/Ecommerce-Website)**
+
+---
+
+## 📊 GitHub Activity
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Uzair-Debugger&theme=tokyonight" alt="GitHub Streak" />
+</div>
+
+---
+
+## 🌐 Let's Connect
 
 <p align="left">
   <a href="mailto:smuzair14cse@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-
   <a href="https://www.linkedin.com/in/syed-muhammad-uzair-">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-
   <a href="https://iam-uzair.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
 </p>
 
----
+<sub>Open to backend, full-stack, and AI-integration roles — always happy to talk architecture.</sub>
 
-⭐ Passionate about building scalable systems, secure backend architectures, and AI-enhanced products.
+</div>
