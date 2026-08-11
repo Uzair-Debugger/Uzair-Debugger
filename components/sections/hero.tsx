@@ -31,9 +31,7 @@ export default function Hero() {
             </Typography>
 
             <Typography variant="body1" className="max-w-xl mx-auto lg:mx-0">
-              I'm a Full Stack Web Developer with expertise in React.js, Next.js, Express.js and FastAPI, committed to building
-              dynamic and scalable applications. I specialize in building efficient
-              backend systems and intuitive user interfaces.
+              I'm a Full Stack Web Developer who builds modern SaaS products, AI-powered customer experiences, and secure dashboard systems using React, Next.js, and TypeScript.
             </Typography>
 
             <div className="space-y-2">

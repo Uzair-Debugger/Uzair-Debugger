@@ -2,17 +2,54 @@ export const skills = [
   { name: "Javascript", icon: "/skills/icon-javascript.svg" },
   { name: "Typescript", icon: "/skills/icon-typescript.svg" },
   { name: "React", icon: "/skills/icon-react.svg" },
+  { name: "Next.js", icon: "/skills/icon-nextjs.svg" },
   { name: "Node.js", icon: "/skills/icon-nodejs.svg" },
-  { name: "Express.js", icon: "/skills/icon-express.png" },
-  { name: "FastAPI", icon: "/skills/icon-fastapi.svg" },
+  { name: "Express.js", icon: "/skills/icon-express.svg" },
+  { name: "Tailwind CSS", icon: "/skills/icon-tailwindcss.svg" },
   { name: "PostgreSQL", icon: "/skills/icon-postgresql.svg" },
   { name: "MySQL", icon: "/skills/icon-mysql.svg" },
   { name: "MongoDB", icon: "/skills/icon-mongodb.svg" },
   { name: "Git", icon: "/skills/icon-git.svg" },
-  { name: "Tailwindcss", icon: "/skills/icon-tailwindcss.svg" },
+  { name: "FastAPI", icon: "/skills/icon-fastapi.svg" },
 ];
 
 export const projects = [
+  {
+    id: "nexa-support",
+    title: "NexaSupport — AI Customer Support SaaS",
+    description:
+      "A full-stack SaaS platform that lets businesses create custom AI customer support agents using RAG. Owners can upload their own documents, FAQs, and product information to build a personalized knowledge base, enabling the chatbot to provide accurate responses while reducing support workload and saving time.",
+    features: [
+    "Create a custom AI customer support agent powered by RAG",
+    "Upload business-specific documents and information to build a personalized knowledge base",
+    "AI responses grounded in the customer's own uploaded data and support content",
+    "One-line widget embed delivered by chatbot.js for any website",
+    "Embeddable chat widget with live AI responses and typing indicator",
+    "Secure OAuth 2.0 login with Scalekit and httpOnly session cookies",
+    "Knowledge base management for FAQs, product information, and support policies",
+    "Dashboard for managing chatbot settings, knowledge, and business information",
+    "REST API backend connecting the widget, dashboard, and AI chat service", 
+    "Automates repetitive customer queries, reducing support workload and saving time",
+
+  ],
+
+    techStack: [
+      "Next.js 16 (App Router)",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Motion",
+      "Scalekit OAuth 2.0",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Node.js",
+      "REST API",
+    ],
+    image: "/projects/nexasupport.png",
+    category: "Full Stack",
+    status: "Completed",
+    githubLink: "https://github.com/Uzair-Debugger/AI-Customer-Support-Agent",
+    liveLink: "",
+  },
   {
   id: "pin-code",
   title: "Pin Code - Code Snippet Manager",

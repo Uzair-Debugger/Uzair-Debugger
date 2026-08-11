@@ -50,19 +50,15 @@ export default function AboutMe() {
 
             {/* Paragraphs */}
             <Typography variant="body1" className="mb-5 leading-relaxed">
-              I'm a dedicated, Full Stack Developer with a strong focus on creating seamless user experiences and efficient web solutions. Specializing in Angular, React.js, and Node.js, I bring both the technical and visual aspects of digital products to life. I'm passionate about developing intuitive, responsive interfaces and writing clean, high-performance code. My commitment to delivering top-quality work drives me to constantly innovate and excel in every project.
+              I'm a dedicated Full Stack Developer focused on building polished SaaS products and AI-driven user experiences. I specialize in web applications that solve real business problems — from marketing pages to secure dashboards and embeddable widgets.
             </Typography>
 
             <Typography variant="body1" className="mb-5 leading-relaxed">
-              I began my web development career in 2023, and since then, I've continually expanded my skills. Each project has fueled my growth as a full stack developer, driving my passion for creating efficient, user-friendly web applications.
-            </Typography>
-
-            <Typography variant="body1" className="mb-5 leading-relaxed">
-              I'm constantly evolving by tackling new challenges and expanding my knowledge daily. I'm passionate about understanding user behavior and creating web applications that deliver valuable experiences for all users.
+              I have hands-on experience shipping full product lifecycles with modern stacks like Next.js, Tailwind CSS, Prisma, and PostgreSQL. My work includes secure authentication, settings dashboards, and scalable backend APIs.
             </Typography>
 
             <Typography variant="body1" className="leading-relaxed">
-              I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.
+              I enjoy turning complex workflows into intuitive products, and I'm always learning new ways to make software more reliable, fast, and user-friendly.
             </Typography>
 
           </div>
