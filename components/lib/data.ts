@@ -47,7 +47,7 @@ export const projects = [
     image: "/projects/nexasupport.png",
     category: "Full Stack",
     status: "Completed",
-    githubLink: "https://github.com/Uzair-Debugger/AI-Customer-Support-Agent",
+    githubLink: "https://github.com/Uzair-Debugger/NexaSupport",
     liveLink: "",
   },
   {
@@ -114,8 +114,8 @@ export const projects = [
   },
 
   {
-    id: "fullstack-ecommerce",
-    title: "Full Stack Ecommerce Application",
+    id: "TechTronics — Fullstack Ecommerce Application",
+    title: "TechTronics — Fullstack Ecommerce Application",
     description:
       "A complete ecommerce platform with authentication, product management, and order tracking.",
     features: [
@@ -137,7 +137,7 @@ export const projects = [
     image: "/projects/ecommerce.png",
     category: "Full Stack",
     status: "Completed",
-    githubLink: "https://github.com/Uzair-Debugger/Ecommerce-Website",
+    githubLink: "https://github.com/Uzair-Debugger/TechTronics",
     liveLink: "https://ecommerce-frontend-chi-ten-25.vercel.app",
   },
 
@@ -166,7 +166,7 @@ export const projects = [
   image: "/projects/medocbills.png",
   category: "Frontend",
   status: "Completed",
-  githubLink: "https://github.com/Uzair-Debugger/MedocBills-Healthcare--main",
+  githubLink: "https://github.com/Uzair-Debugger/MedocBills",
   liveLink: "https://www.medocbills.com",
 },
 ];
